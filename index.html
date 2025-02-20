@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA Imperial - Home Appliances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">La Imperial</a>
+            <nav class="nav">
+                <button class="mobile-menu-btn" id="menuBtn">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            Browse Categories
+                            <svg class="dropdown-icon" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M7 10l5 5 5-5" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="category-kitchen.html">Kitchen Appliances</a></li>
+                            <li><a href="category-laundry.html">Laundry</a></li>
+                            <li><a href="category-cooling.html">Cooling</a></li>
+                            <li><a href="category-kitchen-major.html">Major Appliances</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="aboutpage.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search appliances...">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <a href="loginpage.html" class="icon-btn">👤</a>
+                <button class="icon-btn" > <a href="addtocart.html"></a>🛒</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-split">
+                <div class="hero-content">
+                    <h1>Modern Appliances for Modern Homes</h1>
+                    <p>Discover our premium selection of home appliances that make your life easier</p>
+                    <a href="products.html" class="cta-button">Shop Now</a>
+                </div>
+                <div class="hero-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1556909114-f6016daa51d4" alt="Modern Kitchen">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30" alt="Luxury Appliances">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1610557892470-55d587e6e277" alt="Smart Home">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1613274554329-70f997c5f3d7" alt="Modern Living">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30" alt="Smart Refrigerator">
+                    <div class="product-info">
+                        <h3>Smart Refrigerator Pro</h3>
+                        <p>Advanced cooling technology with smart features</p>
+                        <span class="product-price">$1,299</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6016daa51d4" alt="Modern Oven">
+                    <div class="product-info">
+                        <h3>Premium Electric Oven</h3>
+                        <p>Perfect baking results every time</p>
+                        <span class="product-price">$799</span>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1610557892470-55d587e6e277" alt="Washing Machine">
+                    <div class="product-info">
+                        <h3>Smart Washing Machine</h3>
+                        <p>Energy-efficient with multiple programs</p>
+                        <span class="product-price">$649</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Selling Items -->
+    <section class="top-selling">
+        <div class="container">
+            <h2 class="section-title">Top Selling Items</h2>
+            <div class="top-selling-grid">
+                <div class="product-card highlight">
+                    <img src="https://images.unsplash.com/photo-1613274554329-70f997c5f3d7" alt="Air Conditioner">
+                    <div class="product-info">
+                        <h3>Inverter AC 1.5 Ton</h3>
+                        <p>Energy efficient cooling solution</p>
+                        <span class="product-price">$899</span>
+                        <span class="sales-tag">Best Seller</span>
+                    </div>
+                </div>
+                <div class="product-card highlight">
+                    <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30" alt="Microwave">
+                    <div class="product-info">
+                        <h3>Digital Microwave Oven</h3>
+                        <p>Quick and efficient cooking</p>
+                        <span class="product-price">$299</span>
+                        <span class="sales-tag">Top Rated</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Achievements -->
+    <section class="achievements">
+        <div class="container">
+            <h2 class="section-title">Our Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <span class="achievement-number">10K+</span>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="achievement-card">
+                    <span class="achievement-number">15+</span>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="achievement-card">
+                    <span class="achievement-number">500+</span>
+                    <p>Products</p>
+                </div>
+                <div class="achievement-card">
+                    <span class="achievement-number">24/7</span>
+                    <p>Customer Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="reviews-carousel">
+                <div class="reviews-track">
+                    <div class="review-card">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Sarah Johnson" class="reviewer-image">
+                        <h3>Sarah Johnson</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>"The quality of their appliances is outstanding. My new refrigerator has made my kitchen life so much easier!"</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Michael Chen" class="reviewer-image">
+                        <h3>Michael Chen</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>"Excellent customer service and the installation was very professional. Highly recommend!"</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="Emily Rodriguez" class="reviewer-image">
+                        <h3>Emily Rodriguez</h3>
+                        <div class="stars">★★★★★</div>
+                        <p>"Their smart home appliances have transformed my daily routine. Everything works seamlessly!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pak Electronics</h3>
+                    <p>Your trusted destination for premium home appliances.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="shipping.html">Shipping Info</a></li>
+                        <li><a href="returns.html">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pak Electronics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

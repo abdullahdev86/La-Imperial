@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="addtocart.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <button id="checkout-btn" onclick="showPaymentPage()">
+                <span>🛒</span> Proceed to Payment
+            </button>
+        </div>
+
+        <div class="payment-page" id="payment-page">
+            <h2>Payment Page</h2>
+            <div id="payment-items">
+                <!-- Items added to cart will appear here -->
+            </div>
+            <button onclick="goBackToCart()">Back to Cart</button>
+        </div>
+    </div>
+
+    <script src="addtocart.js"></script>
+</body>
+</html>
