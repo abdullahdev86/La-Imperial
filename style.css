@@ -95,6 +95,9 @@ body {
   padding: 5px;
   text-decoration: none;
 }
+.icon-btn a{
+  text-decoration: none;
+}
 
 .mobile-menu-btn {
   display: none;
