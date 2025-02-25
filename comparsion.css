@@ -1,0 +1,308 @@
+/* Global Styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.navbar {
+   /* padding: 10px 15px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: burlywood;
+    color: #007bff;
+}
+a.navbar-brand{
+
+    color: #5a5a5a !important;
+    font-size: xx-large;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+
+.navbar-nav .nav-link {
+
+    color: #5a5a5a !important;
+    font-weight: 500;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+    text-decoration: none;
+    background-color: hotpink;
+    font-size: large;
+    
+
+}
+
+.navbar-toggler-icon {
+    background-color: hotpink;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+.logo img{
+
+width: 50px;
+height: 50px;
+position: relative;
+
+}
+.container-fliud{
+
+    width: 100%;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fce4ec;  /* Light Pink background */
+    color: #000000;  /* Black text */
+    padding: 20px;
+}
+
+/* Container */
+.product-comparison-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #880e4f;  /* Darker Pink for Title */
+}
+
+/* Product Selection */
+.product-selection-area {
+    margin-bottom: 30px;
+    background-color: #ffffff;  /* White background for selection area */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.product-selection-area label {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: #333333;  /* Darker text for labels */
+}
+
+.product-selection-area select {
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #e91e63;  /* Pink border for selects */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333333;  /* Darker text inside selects */
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #e91e63;  /* Pink Button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ad1457;  /* Darker Pink on hover */
+}
+
+/* Product Comparison Table */
+.product-comparison-table {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.product-comparison-item {
+    background-color: #ffffff;  /* White background for product cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-comparison-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-comparison-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-comparison-item ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.product-comparison-item li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333333;  /* Black text for product details */
+}
+
+.comparison-divider {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e91e63;  /* Pink color for divider text */
+    padding: 20px 0;
+}
+
+.comparison-divider::before,
+.comparison-divider::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #e91e63;  /* Pink separator */
+    margin: 0 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .product-comparison-table {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .product-comparison-item {
+        width: 100%;
+    }
+
+    .product-selection-area {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Footer Start */
+.footer {
+    background: linear-gradient(90deg, #ffffff, #f8f1f4); /* Soft white-pink gradient */
+    padding: 60px 0;
+    border-top: 1px solid #e5e5e5; /* Subtle top border for structure */
+}
+
+.footer h4 {
+    font-size: 18px;
+    color: #333333; /* Dark gray text for a professional tone */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.footer h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #ffccd5; /* Light pink underline */
+    height: 2px;
+    box-sizing: border-box;
+    width: 40px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #555555; /* Subtle gray text for links */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ff6f91; /* Mature pink hover color */
+    padding-left: 5px; /* Slight animation for hover effect */
+}
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff; /* White background for icons */
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ffccd5; /* Subtle pink border */
+    color: #555555; /* Neutral text color */
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.social-links a:hover {
+    color: #ffffff; /* White text on hover */
+    background-color: #ff6f91; /* Vibrant pink hover background */
+    border-color: #ff6f91;
+}
+
+.copyright-area {
+    background-color: #f8f8f8; /* Light neutral background */
+    color: #555555; /* Subtle gray text */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    border-top: 1px solid #e5e5e5; /* Clean separator */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-top .col-md-3 {
+        margin-bottom: 20px;
+    }
+
+    .footer-top .social-icons {
+        justify-content: center;
+    }
+
+    .footer ul li a {
+        font-size: 13px;
+    }
+
+    .social-links a {
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        font-size: 14px;
+    }
+}
