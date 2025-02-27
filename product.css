@@ -5,29 +5,6 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-
-/* Navbar Styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-}
-
-.nav-home {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.search-bar {
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
-    width: 300px;
-}
-
 /* Hero Section Styles */
 .hero-section {
     padding: 50px 20px;
@@ -47,6 +24,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    margin-top: 10%;
 }
 
 .carousel {
@@ -73,8 +51,7 @@ body {
 .carousel-item img {
     width: 100%;
     height: 100%; /* Ensure images take full height */
-    object-fit: cover; /* Maintain aspect ratio while covering the area */
-    display: block;
+    object-fit:  /* Maintain aspect ratio while covering the area */    
 }
 
 .carousel-control {
@@ -167,4 +144,149 @@ body {
 
 .product-card:hover .add-to-cart {
     display: block;
+}
+
+/* Style for the beautiful heading */
+.category-heading {
+    text-align: center; /* Center the heading */
+    font-size: 36px; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #ffffff; /* White text color */
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Gradient background */
+    padding: 15px 30px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    margin: 40px 45%;
+}
+
+/* Header Styles */
+.header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #007bff;
+  }
+  
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+  }
+  
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  
+  #searchInput {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 14px;
+  }
+  
+  .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: -30px;
+  }
+  
+  .icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .icon-btn a{
+    text-decoration: none;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Unique Styling for the Heading */
+.category-heading1 {
+    font-family: 'Montserrat', sans-serif; /* Custom Font */
+    font-size: 48px; /* Big font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the heading */
+    margin: 100px 0; /* Add space around the heading */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text transparent */
+    background-clip: text;
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 4px; /* Add spacing between letters */
+    position: relative; /* For pseudo-element effects */
+    animation: glow 2s infinite alternate; /* Glow animation */
+    
+}
+
+/* Glow Animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(255, 126, 95, 0.8), 0 0 20px rgba(255, 126, 95, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(254, 180, 123, 0.8), 0 0 40px rgba(254, 180, 123, 0.8);
+    }
+}
+
+/* Optional: Add a decorative underline */
+.category-heading::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    margin: 10px auto 0;
+    border-radius: 2px;
 }

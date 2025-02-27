@@ -15,3 +15,14 @@ function moveSlide() {
 
 // Automatically move to the next slide every 3 seconds
 setInterval(moveSlide, 3000);
+
+// Add glow effect on hover (optional)
+const heading = document.querySelector('.category-heading');
+
+heading.addEventListener('mouseenter', () => {
+    heading.style.animation = 'glow 1s infinite alternate';
+});
+
+heading.addEventListener('mouseleave', () => {
+    heading.style.animation = 'glow 2s infinite alternate';
+});

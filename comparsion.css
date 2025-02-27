@@ -69,7 +69,7 @@ position: relative;
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fce4ec;  /* Light Pink background */
+    background-color: #ffffff;  /* Light Pink background */
     color: #000000;  /* Black text */
     padding: 20px;
 }
@@ -175,7 +175,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #e91e63;  /* Pink color for divider text */
+    color: #e6d6db;  /* Pink color for divider text */
     padding: 20px 0;
 }
 
@@ -306,3 +306,96 @@ button:hover {
         font-size: 14px;
     }
 }
+
+        /* Header Styles */
+.header {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    margin: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #007bff;
+  }
+  
+  .header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: auto;
+  }
+  
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+  
+  #searchInput {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 14px;
+  }
+  
+  .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: -30px;
+  }
+  
+  .icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .icon-btn a{
+    text-decoration: none;
+  }
+  
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }

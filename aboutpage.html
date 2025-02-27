@@ -3,58 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About La Imperial</title>
-    <link rel="stylesheet" href="aboutpage.css">
+    <title>About Us - La Imperial</title>
+    <link rel="stylesheet" href="aboutpage.css"> <!-- Link to external CSS -->
+    <script src="aboutpage.js" defer></script> <!-- Link to external JavaScript -->
 </head>
 <body>
-    <header>
-        <h1>About La Imperial</h1>
-    </header>
 
-    <main>
-        <section class="about-section">
-            <div class="about-content">
-                <h2>Welcome to La Imperial</h2>
-                <p>
-                    La Imperial is Pakistan's leading home electronics store, renowned for delivering cutting-edge technology and exceptional customer service. 
-                    With over a decade of experience, we have become the go-to destination for premium home electronics, offering a wide range of products 
-                    that cater to every aspect of modern living.
-                </p>
-                <p>
-                    Our commitment to quality and innovation has earned us the prestigious title of <strong>"Best Home Electronics Store in Pakistan"</strong>. 
-                    We take pride in our award-winning reputation, which reflects our dedication to excellence and our passion for enhancing the lives of our customers.
-                </p>
-                <p>
-                    At La Imperial, we believe in more than just selling products; we aim to create experiences. Whether you're looking for the latest smart home devices, 
-                    state-of-the-art entertainment systems, or energy-efficient appliances, we have everything you need to transform your home into a hub of innovation and comfort.
-                </p>
-            </div>
-
-            <!-- 3D Rotating Card Animation -->
-            <div class="animation-container">
-                <div class="card" id="card">
-                    <div class="card-front">
-                        <h3>🏆 Award-Winning 🏆</h3>
-                        <p>Best Home Electronics Store in Pakistan</p>
-                    </div>
-                    <div class="card-back">
-                        <h3>Why Choose Us?</h3>
-                        <ul>
-                            <li>Premium Quality Products</li>
-                            <li>Exceptional Customer Service</li>
-                            <li>Innovative Solutions</li>
-                            <li>Affordable Prices</li>
+            <!-- Header -->
+            <header class="header">
+                <div class="container">
+                    <a href="index.html" class="logo">La Imperial</a>
+                    <nav class="nav">
+                        <button class="mobile-menu-btn" id="menuBtn">☰</button>
+                        <ul class="nav-links" id="navLinks">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li class="dropdown"></li>
+                            </li>
+                            <li><a href="product.html">Products</a></li>
+                            <li><a href="aboutpage.html">About</a></li>
+                            <li><a href="comparisonpage.html">Comparison Page </a></li>
                         </ul>
+                    </nav>
+                    <div class="header-icons">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search appliances...">
+                            <button class="search-btn">🔍</button>
+                        </div>
+                        <a href="loginpage.html" class="icon-btn">👤</a>
+                        <button class="icon-btn" > <a href="addtocart.html">🛒</a></button>
                     </div>
                 </div>
+            </header>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="container">
+            <h1>About La Imperial</h1>
+            <p>Welcome to <strong>La Imperial</strong>, where excellence meets elegance. We are a premier brand dedicated to providing top-quality products and services that redefine luxury and sophistication. Our mission is to deliver unparalleled experiences to our customers, ensuring every interaction with us is memorable.</p>
+            <p>At La Imperial, we believe in innovation, quality, and customer satisfaction. Our team of experts works tirelessly to bring you the best in class, whether it's through our state-of-the-art appliances, stylish designs, or exceptional customer service. We are proud to be a trusted name in the industry, and we strive to exceed your expectations every day.</p>
+            <p>Join us on this journey of excellence and discover why La Imperial is the preferred choice for discerning customers worldwide.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">What products does La Imperial offer? <span class="dropdown-icon">&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>La Imperial offers a wide range of premium products, including home appliances, kitchen gadgets, and lifestyle accessories. Each product is designed with precision and crafted to perfection.</p>
+                </div>
             </div>
-        </section>
-    </main>
+            <div class="faq-item">
+                <button class="faq-question">How can I contact customer support? <span class="dropdown-icon">&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>You can reach our customer support team by emailing <a href="mailto:support@laimperial.com">support@laimperial.com</a> or calling our toll-free number at +1-800-123-4567.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Where can I buy La Imperial products? <span class="dropdown-icon">&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Our products are available at leading retail stores and online through our official website. Visit <a href="https://www.laimperial.com">www.laimperial.com</a> to explore our collection.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Do you offer international shipping? <span class="dropdown-icon">&#9660;</span></button>
+                <div class="faq-answer">
+                    <p>Yes, we offer international shipping to most countries. Shipping costs and delivery times may vary depending on your location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2023 La Imperial. All rights reserved.</p>
-    </footer>
+    <!-- Ask a Question Section -->
+    <section class="ask-question">
+        <div class="container">
+            <h2>Ask Your Question</h2>
+            <form id="question-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-    <script src="script.js"></script>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="question">Your Question:</label>
+                <textarea id="question" name="question" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
